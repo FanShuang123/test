@@ -2,3 +2,4 @@
 
 js文件夹里边的ajax是自己写的,后台也都是自己弄的
 
+访问  html/same.html
