@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50722
 File Encoding         : 65001
 
-Date: 2018-08-21 13:58:47
+Date: 2018-08-21 17:38:48
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -40,7 +40,7 @@ DROP TABLE IF EXISTS `member`;
 CREATE TABLE `member` (
   `mem_id` int(20) NOT NULL AUTO_INCREMENT,
   `mem_name` varchar(50) DEFAULT NULL,
-  `mem_grade` varchar(20) DEFAULT NULL COMMENT '会员等级',
+  `mem_grade_name` varchar(20) DEFAULT NULL COMMENT '会员等级',
   `mem_pwd` varchar(100) DEFAULT NULL,
   `mem_card_num` varchar(50) DEFAULT NULL COMMENT '卡号',
   `mem_bir_type` varchar(6) DEFAULT NULL COMMENT '阴历生日还是阳历生日',
@@ -59,7 +59,7 @@ CREATE TABLE `member` (
   PRIMARY KEY (`mem_id`),
   KEY `grade_id` (`grade_id`),
   CONSTRAINT `grade_id` FOREIGN KEY (`grade_id`) REFERENCES `mem_grade` (`grade_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of member
@@ -76,6 +76,7 @@ INSERT INTO `member` VALUES ('19', '', '默认等级', '', null, '公历', '', '
 INSERT INTO `member` VALUES ('20', '', '默认等级', '', null, '公历', '', '', null, '未知', null, null, null, '正常', null, null, '2018-08-10 17:25:21', '2');
 INSERT INTO `member` VALUES ('21', '', '默认等级', '', null, '公历', '', '', null, '未知', null, null, null, '正常', null, null, '2018-08-10 17:25:34', '2');
 INSERT INTO `member` VALUES ('22', '', '默认等级', '', null, '公历', '', '', null, '未知', null, null, null, '正常', null, null, '2018-08-10 17:26:44', '2');
+INSERT INTO `member` VALUES ('23', '3453', null, '53453', '534', '农历', '08-16', '55', null, '男', '4345', '55.00', '55.00', '挂失', null, '55', '2018-08-21 17:36:11', null);
 
 -- ----------------------------
 -- Table structure for mem_grade
@@ -90,7 +91,7 @@ CREATE TABLE `mem_grade` (
   `grade_score` decimal(10,2) DEFAULT NULL,
   `grade_state` tinyint(10) DEFAULT NULL COMMENT '当前等级状态,是1的时候就可用,是0 就是用户',
   PRIMARY KEY (`grade_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of mem_grade
@@ -99,8 +100,8 @@ INSERT INTO `mem_grade` VALUES ('1', '青铜会员', '1.00', '1.00', null, '1.00
 INSERT INTO `mem_grade` VALUES ('2', '白银会员', '1.00', '1.00', null, '1.00', '0');
 INSERT INTO `mem_grade` VALUES ('3', '白金会员', '1.00', '1.00', null, '1.00', '1');
 INSERT INTO `mem_grade` VALUES ('4', '黄金会员', '1.00', '1.00', '0.55', '55.00', '1');
-INSERT INTO `mem_grade` VALUES ('5', '黄金会员', '1.00', '1.00', '0.55', '55.00', '0');
-INSERT INTO `mem_grade` VALUES ('6', '青铜1', '1.00', '0.50', '0.90', '1.00', '0');
+INSERT INTO `mem_grade` VALUES ('5', '黄金会员', '1.00', '1.00', '0.55', '55.00', '1');
+INSERT INTO `mem_grade` VALUES ('6', '青铜1', '1.00', '0.50', '0.90', '1.00', '1');
 INSERT INTO `mem_grade` VALUES ('7', '青铜1', '1.00', '0.50', '0.90', '1.00', '1');
 INSERT INTO `mem_grade` VALUES ('8', '白银1', '0.50', '0.60', '0.70', '5.00', '1');
 INSERT INTO `mem_grade` VALUES ('9', '白银1', '0.50', '0.60', '0.70', '5.00', '1');
@@ -108,3 +109,4 @@ INSERT INTO `mem_grade` VALUES ('10', '会员1', '1.00', '1.00', '1.00', '5.00',
 INSERT INTO `mem_grade` VALUES ('11', '会员2', '0.50', '0.80', '0.70', '5.00', '1');
 INSERT INTO `mem_grade` VALUES ('12', '会员2', '0.50', '0.80', '0.70', '5.00', '1');
 INSERT INTO `mem_grade` VALUES ('13', '会员2', '0.50', '0.80', '0.70', '5.00', '0');
+INSERT INTO `mem_grade` VALUES ('14', 'sadas', '1.00', '1.00', '1.00', '2.00', '1');
