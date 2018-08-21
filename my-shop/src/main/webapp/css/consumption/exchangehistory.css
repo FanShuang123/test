@@ -1,0 +1,46 @@
+@import url(../base.css);
+
+.url{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color: #000;
+    box-sizing: border-box;
+    padding: left 5px; 
+    margin-top: 3px;
+    margin-left: 3px;
+    line-height: 30px;  
+}
+
+#search{
+	width: 75%;
+	margin: 2% 5%;
+}
+table{
+    margin-left: 5%;
+    border: 1px solid #7d7d7d;
+}
+tr{
+    width: 75%;
+}
+table td{
+    border:1px solid #7d7d7d;
+    padding-left: 5px;
+    text-align: center;
+}
+.button{
+	width: 50px;
+	height: 25px;
+	background-color:skyblue;
+	border: none;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+.button0{
+    width: 100px;
+    height: 25px;
+    background-color:skyblue;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+}

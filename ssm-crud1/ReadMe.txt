@@ -1,0 +1,4 @@
+用到了mybatis的逆向工程
+做了一些简单的crud的操作
+
+访问index.jsp

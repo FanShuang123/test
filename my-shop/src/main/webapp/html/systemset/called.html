@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/systemset/called.css">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+
+<!-- 地址 -->
+                <div class="url">当前位置：
+                        <span>汇客会员管理系统</span>->
+                        <span>系统设置</span>->
+                        <span>会员来电历史纪录</span>
+                </div>
+                <!-- 来电信息 -->
+        <div class="search">
+            <form action="http://www.jianzhanmall.com/index.php" method="get">
+                    <input type="hidden" name="m" value="content"/>
+                    <input type="hidden" name="c" value="index"/>
+                    <input type="hidden" name="a" value="lists"/>
+                    <input type="hidden" name="catid" value="3"/>
+                            <span>会员卡号或来电号码:</span>
+            <input type="text" placeholder="输入号码"/>
+            <input type="submit" value="查询" class="sub" style="cursor:pointer;"/>
+        </div>
+        <div class="mn">
+            <a href="#" title="删除已勾选的来电记录"><i>&#xe65f;</i> <font color="#0E0C0C">删除已勾选的来电记录</font></a>
+            |<a href="#" title="播放选中的来电记录"><i>&#xe65f;</i><font color="#0E0C0C">播放选中的来电记录</font></a>
+            |<a href="#" title="导出打印"><i>&#xe65f;</i></font><font color="#0E0C0C">导出打印</font></a>
+        
+        </div>
+        <table class="hovertable">
+            <tr>
+                <td></td>
+                <td>会员卡号</td>
+                <td>会员名称</td>
+                <td>来电号码</td>
+                <td>来电状态</td>
+                <td>时间</td>
+                <td>录音文件</td>
+            </tr>
+        </table>
+
+          <!-- 分页器 -->
+          <div class="footer">
+                <div class="words">
+                        <a href="#"><font color="#751BE5">全选</font></a>
+                        <a href="#"><font color="#751BE5">反选</font></a>
+                                共0条记录 当前0/0页
+                    </div>
+                <div class="navigation1">
+                        <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                                       </li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                            <li>
+                                            <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                </li>
+                         </ul>
+                      </nav>
+                    </div>
+                    <div class="go">
+                                 <a href="#">go</a>
+                             </div>
+                    <div class="navigation2">
+                                <p>每页<select name="num">
+                                    <option value="1">10</option>
+                                    <option value="2">20</option>
+                                    <option value="3">50</option>
+                                    <option value="3">100</option>
+                                    </select>条</p>
+                            </div>
+        </div>
+    
+</body>
+</html>

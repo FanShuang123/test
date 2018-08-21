@@ -1,0 +1,268 @@
+@import url(../base.css);
+
+.url{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color: #000;
+    box-sizing: border-box;
+    padding: left 5px; 
+    line-height: 30px;
+    margin-top: 3px;
+}
+.search form{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	 position: relative;
+	 left: 10%;
+	 top: 5%;
+	 
+}
+ .search .sub{
+	width: 15%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+	 position: relative;
+	 left: 90px;
+	 top: 31px;
+}
+
+.words{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	color:red;
+	font-size: 13px;
+	font-weight:600;
+	padding-left: 30px;
+}
+.find {
+	width: 100%;
+	height: 60px;
+	font-size: 12px;
+    line-height: 60px;
+}
+.find span{
+	color: #999;
+	font-size:14px; 
+}
+
+ .find .sub{
+	width: 17%;
+	height: 30px;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+	line-height: 100%;
+}
+
+.frame { 
+	position: absolute;
+	left: 0;
+	top:  11.5%;
+	width: 720px;
+	height:500px;
+	margin-left: 80px;
+	border: 2px solid skyblue;}
+.line {
+    padding: 0 1px 0;
+    margin: 10px 0;
+    line-height: 1px;
+    border-left: 20px solid aqua;
+    border-right: 650px solid aqua;
+    text-align: center;
+    color: aqua;
+    box-sizing: border-box;
+    font-size: 12px;
+	position: relative;
+	left: 0;
+	top: 10px;
+}
+.line1{
+    padding: 0 1px 0;
+    margin: 10px 0;
+    line-height: 1px;
+    border-left: 20px solid aqua;
+    border-right: 650px solid aqua;
+    text-align: center;
+    color: aqua;
+    box-sizing: border-box;
+    font-size: 12px;
+	position: relative;
+	left: 0;
+	top: 100px;
+}
+.search1 {
+	position: relative;
+	left: 10px;
+	top: 30px;
+	
+}
+.search1 form{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.search1 .txt{
+	width: 80%;
+	float: left;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	border: 1px solid #959595;
+	border-radius: 8px;
+	padding: 0 20px;
+	font-size: 10px;
+}
+ .search1 .sub{
+	width: 7%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+}
+.search2 {
+	position: relative;
+	left: 10px;
+	top: 50px;
+}
+.search2 form{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+
+}
+.progress1{
+	width: 22%;
+	position: relative;
+	left: 90px;
+	top: 30px;
+
+}
+.search3 .sub{
+	width: 11%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+	position: relative;
+	left: 110px;
+	top: 70px;
+}
+.search4 {
+	position: relative;
+	left: 10px;
+	top: 110px;
+}
+.search4 form{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.search4 .txt{
+	width: 80%;
+	float: left;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	border: 1px solid #959595;
+	border-radius: 8px;
+	padding: 0 20px;
+	font-size: 10px;
+}
+ .search4 .sub{
+	width: 7%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+}
+#opt:hover{
+	 background: aqua;
+	 color: #000;
+}
+ .search5 .sub{
+	position: relative;
+	 left: 110px;
+	 top: 150px;
+	width: 11.5%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+}
+.word{
+    width: 100%;
+    height: 50px;
+	color: #999;
+   
+	position: relative;
+    top: 30%;
+    left: 0;
+}
+.word p{
+	font-size: 12px;
+}
+
+.search6 {
+	position: relative;
+	left: 10px;
+	top:129px;
+
+}
+.progress2{
+	width: 22%;
+	position: relative;
+	left: 90px;
+	top: 78px;
+}
+.search7 {
+	position: relative;
+	left: 10px;
+	top: 110px;
+}
+.search7 form{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.search7 .txt{
+	width: 80%;
+	float: left;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	border: 1px solid #959595;
+	border-radius: 8px;
+	padding: 0 20px;
+	font-size: 10px;
+}
+ .search7 .sub{
+	width: 7%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+}
+.active{
+	background: aqua;
+}
+.frame:last-child{
+	display: none;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="../../css/associator/recharge.css"/>
+		<script type="text/javascript" src="../../js/recharge.js"></script>
+	</head>
+	<body>
+		<div style="position: relative;">
+			<!-- 地址 -->
+	        <div class="url">当前位置：
+	            <span>汇客会员管理系统</span>->
+	            <span>会员管理</span>->
+	            <span>会员账户充值/续次</span>
+	    	</div>
+	    	<!--内容-->
+	    	<div class="con">
+	    		<!--卡号，手机部分-->
+	    		<div class="tel clearfix">
+	    			<span class="fl font_tel">卡号/手机（F2）:</span>
+	    			<div class="input_tel fl">
+	    				<input type="text" name="tel" value=""/>
+	    				<div class="input_tel_bg fr" onclick="seach()"></div>
+	    			</div>
+	    			<div class="seach fl">
+	    				<input type="button" value="搜索" />
+	    			</div>
+	    		</div>
+	    		<div id="search_result">
+	    			<table cellspacing="0" cellpadding="3" width="368" style="border: 1px solid #aeaeae;margin-top: -4px;">
+						<tr>
+							<td width="18" class="tr_td"></td>
+							<td class="tr_td">支付金额</td>
+							<td class="tr_td">计次产品名称</td>
+							<td class="tr_td">次数</td>
+							<td class="tr_td">操作员</td>
+							<td>添加时间</td>
+						</tr>
+					</table>
+					<div class="result_bottom">
+						<span style="font-size:12px;">此处列举的仅为最近添加的20个会员！查找单个会员请使用搜索功能<br></span>
+						卡号/姓名/手机
+						<input type="text" name="tel" id="" size="7"/>
+						<input type="button" value="选择"class="xz"/>
+					</div>
+	    		</div>
+	    		<!--会员基本资料-->
+	    		<div class="material">
+	    			<div class="user_material">会员基本资料</div>
+	    			<div class="material_cont">
+	    				<ul>
+	    					<li>会员卡号:</li>
+	    					<li>会员姓名:</li>
+	    					<li>卡片余额:</li>
+	    					<li>当前积分:</li>
+	    					<li>当前等级:</li>
+	    					<li>会员生日:</li>
+	    					<li>累计消费:</li>
+	    					<li>过期时间:</li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    		<!--会员储值卡续次-->
+	    		<div class="user_money">
+	    			<div class="user_money_1 clearfix">
+	    				<!--充值-->
+		    			<div class="user_recharge fl com">
+		    				<input type="button" class="but" value="会员储值卡充值" />
+		    			</div>
+		    			<!--续次-->
+		    			<div class="user_comit fl com">
+		    				<input type="button" class="but" value="会员计次卡续次" />
+		    			</div>
+	    			</div>
+	    			<!--对应内容-->
+	    			<div class="user_cont">
+	    				<!--充值-->
+	    				<div class="user_cont_add">
+	    					<!--input选择框-->
+	    					<div class="choose">
+	    						&nbsp;
+	    						<input type="radio" name="money" id="add" checked="checked"/>充值
+	    						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    						<input type="radio" name="money" id="sub"/>扣费
+	    					</div>
+	    					
+	    					<div class="choose_cont">
+	    						充值金额：<input type="text" name=""size="3" class="choose_cont_1"/> <span style="color: red;">无优惠信息</span><br />
+	    						赠送金额：<input type="text" name="" value="￥0.00" size="3" class="choose_cont_2" />
+	    						合计：￥0.00  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    						<span style="color:#8b0000;">无优惠</span><br />
+	    						<p style="color: #d2b48c;"><a href="javascript:void(0)" onclick="addMoney()">员工提成</a> &nbsp;&nbsp;
+	    							此处输入金额会按会员等级自动打折，您也可以直接在“折后总金额”中输入!</p>
+	    						<span style="vertical-align: top;">充值备注：</span>
+	    						<textarea name="" rows="3" cols="68"></textarea><br><br />
+	    						<div class="choose_cont_but">
+	    							<div class="choose_cont_but1 fl">
+	    								<input type="checkbox"/>打印小票
+	    							</div>
+	    							<div class="choose_cont_but2 fr">
+	    								<input type="button" value="储值卡充值" />
+	    							</div>
+	    						</div>
+	    					</div>
+	    					<div class="choose_cont">
+	    						扣费金额：<input type="text" name=""size="3" class="choose_cont_1"/> <span style="color: red;">无优惠信息</span><br />
+	    						赠送金额：<input type="text" name="" value="￥0.00" size="3" class="choose_cont_2" style="background: #efefef;"/>
+	    						合计：￥0.00  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    						<span style="color:#8b0000;">无优惠</span><br />
+	    						<p style="color: #d2b48c;"><span style="color: gray;">员工提成</span> &nbsp;&nbsp;
+	    							此处输入金额会按会员等级自动打折，您也可以直接在“折后总金额”中输入!</p>
+	    						<span style="vertical-align: top;">充值备注：</span>
+	    						<textarea name="" rows="3" cols="68"></textarea><br><br />
+	    						<div class="choose_cont_but">
+	    							<div class="choose_cont_but1 fl">
+	    								<input type="checkbox"/>打印小票
+	    							</div>
+	    							<div class="choose_cont_but2 fr">
+	    								<input type="button" value="储值卡充值" />
+	    							</div>
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="user_cont">
+	    				<div class="add_user_count">
+	    					新增计次项目
+	    				</div>
+		    				<div class="user_per">
+		    					<table cellspacing="0" cellpadding="3" width="650" style="border: 1px solid #aeaeae;margin-top: 3px;">
+		    						<tr>
+		    							<td width="22" class="tr_td"></td>
+		    							<td class="tr_td">产品/类别</td>
+		    							<td class="tr_td">类型</td>
+		    							<td class="tr_td">总次数</td>
+		    							<td class="tr_td">剩余次数</td>
+		    							<td class="tr_td">支付金额</td>
+		    							<td>添加时间</td>
+		    						</tr>
+		    					</table>
+		    				</div>
+	    				</div>
+	    			</div>
+	    			
+	    			<!--会员充值记录-->
+	    			<div class="notes">
+	    				<div class="user_notes clearfix">
+		    				<!--充值-->
+			    			<div class="user_notes_add fl">
+			    				<input type="button" class="notes_but" value="会员充值记录" />
+			    			</div>
+			    			<!--续次-->
+			    			<div class="user_notes_sub fl">
+			    				<input type="button" class="notes_but" value="会员计次卡续次记录" />
+			    			</div>
+	    				</div>
+	    			</div>
+	    			<div class="notes_cont">
+	    				<table cellspacing="0" cellpadding="3" width="650" style="border: 1px solid #aeaeae;margin-top: -4px;">
+							<tr>
+								<td width="22" class="tr_td"></td>
+								<td class="tr_td">充值金额</td>
+								<td class="tr_td">赠送金额</td>
+								<td class="tr_td">操作员</td>
+								<td>充值时间</td>
+							</tr>
+						</table>
+	    			</div>
+	    			<div class="notes_cont">
+	    				<table cellspacing="0" cellpadding="3" width="650" style="border: 1px solid #aeaeae;margin-top: -4px;">
+							<tr>
+								<td width="22" class="tr_td"></td>
+								<td class="tr_td">支付金额</td>
+								<td class="tr_td">计次产品名称</td>
+								<td class="tr_td">次数</td>
+								<td class="tr_td">操作员</td>
+								<td>添加时间</td>
+							</tr>
+						</table>
+	    			</div>
+	    	</div>
+		</div>
+		
+	</body>
+</html>

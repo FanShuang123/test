@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/statistical report/member statistics.css">
+
+</head>
+<body>
+    <!-- 地址 -->
+        <div class="url">当前位置：
+                    <span>汇客会员管理系统</span>->
+                    <span>统计报表</span>->
+                    <span>会员统计</span>
+        </div>
+		
+<div class="search">
+		     <input type="submit" value="会员数据统计报表" class="sub" style="cursor:pointer;"/>
+		      <input type="submit" value="过期会员统计" class="sub" style="cursor:pointer;"/>
+  <input type="submit" value="流失会员统计" class="sub" style="cursor:pointer;"/>
+  <input type="submit" value="会员数据图形报表" class="sub" style="cursor:pointer;"/>
+  <input type="submit" value="会员积分变动统计" class="sub" style="cursor:pointer;"/>
+</div>
+<div class="frame ">
+<div class="Column">
+	<div class="Button">
+	<input type="submit" value="会员高级搜索" class="sub" style="cursor:pointer;"/>
+	<input type="submit" value="显示列设置" class="sub" style="cursor:pointer;"/>
+	</div>
+</div>
+<div class="title">
+  会员积分变动统计报表
+</div>
+<div class="content">
+	<p>生成时间:   <span id="span"></span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp页码1/1</p>
+</div>
+<div class="sliding">
+    <table cellpadding="0" class="tab" >
+		 <tr class="data">
+                    <td>会员卡号</td>
+                    <td>会员姓名</td>
+                    <td>卡号</td>
+                    <td>手机号码</td>
+                    <td>生日</td>
+                    <td>性别</td>
+                    <td>当前等级</td>
+                    <td>过期时间</td>
+                    <td>积分</td>
+                    <td>余额</td>
+                    <td>累计消费</td>
+                    <td>状态</td>
+                    <td>登记时间</td>
+                    <td>剩余次数</td>
+            </tr>
+        </table>
+    </div>
+</div>
+    
+        <ul id="tab-nd">      
+                <li>数量合计：    <span>0</span></li>
+                <li>余额合计：    <span>0</span></li>
+                <li>消费总额合计：<span>0</span></li>
+                <li>积分合计:    <span>0</span></li>
+        </ul>
+ 
+
+</body>
+</html>
+<script src="../../js/member statistics.js"></script>

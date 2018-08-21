@@ -1,0 +1,234 @@
+@import url(../base.css);
+.url{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color: #000;
+    box-sizing: border-box;
+    padding: left 5px; 
+    margin-top: 3px;
+}
+.words{
+	color: #D32225;
+	font-family:"黑体";
+	font-weight:bold;
+	position: relative;
+	left: 60px;
+	top: 0px;
+}
+.words span{
+	position: relative;
+	left: 60px;
+	top: 0px;
+}
+
+.frame { 
+	position: relative;
+	left: -2%;
+	top: 4%;
+	width: 90%;
+	height: 70%;
+	margin-left: 80px;
+	border: 2px solid skyblue;}
+.leftframe { 
+	position: relative;
+	left: -8%;
+	top: 4%;
+	width: 30%;
+	height: 95%;
+	margin-left: 80px;
+	border: 2px solid #F0F0F0;}
+.rightframe { 
+	position: relative;
+	left: 13%;
+	top:-90.5%;
+	width: 75%;
+	height: 84%;
+	margin-left: 80px;
+	border: 2px solid skyblue;}
+.search form{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	 position: relative;
+	 left: 10%;
+	 top: 5%;
+	 
+}
+ .search .sub{
+	width: 15%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+	 position: relative;
+	 left: 60px;
+	 top: 78px;
+}
+.line{
+   
+	
+    text-align: center;
+    color: aqua;
+    box-sizing: border-box;
+    font-size: 10px;
+	position: relative;
+	left: -50px;
+	top: -2px;
+}
+.leftframe textarea{
+	height: 90%;
+	width: 66%;
+}
+.leftframe words{
+	text-decoration-line: underline;
+	color:#1F2FE3;
+}
+.rightframetitle{
+	 text-align: center;
+    color: aqua;
+    box-sizing: border-box;
+    font-size: 10px;
+	position: relative;
+	left: -170px;
+	top: -508px;
+}
+.rightframe span{
+	position: relative;
+	left: 7px;
+	top: 0px;
+}
+.Middle span{
+	position: relative;
+	left: 7px;
+	top: -302px;
+}
+.Middle textarea{
+	width: 550px;
+	height: 330px;
+	position: relative;
+	left: 5px;
+	top: 13px;
+}
+.footer {
+	position: relative;
+	left: 2px;
+	top: 20px;
+}
+.search1 .sub{
+	width: 11%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+	position: relative;
+	left: 200px;
+	top: 90px;
+
+}
+
+/*批量会员群发*/
+.Secondframe { 
+	position:absolute;
+	left: 31%;
+	top: 32%;
+	width: 46.4%;
+	height:57.8%;
+	margin-left: 80px;
+	border: 2px solid skyblue;}
+.Secondleftframe { 
+	position: relative;
+	left: -9%;
+	top: 0%;
+	width: 60%;
+	height: 100%;
+	margin-left: 80px;
+	border: 2px solid #D9292C;}
+.Secondrightframe { 
+	position: relative;
+	left: 51%;
+	top:-100%;
+	width: 40%;
+	height: 100%;
+	margin-left: 80px;
+	border: 2px solid #D9292C;}
+.Secondleftsearch {
+	position: relative;
+	left: 20px;
+	top: 10px;
+	
+	
+}
+
+.Secondleftsearch form{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+}
+.Secondleftsearch .txt{
+	width: 80%;
+	float: left;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	border: 1px solid #959595;
+	border-radius: 8px;
+	padding: 0 20px;
+	font-size: 10px;
+}
+ .Secondleftsearch .sub{
+	width: 7%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+}
+.Secondleftmenu p{
+	position: relative;
+	left: 59px;
+	top: 15px;
+}
+.Secondleftmenu select{
+	position: relative;
+	left: 153px;
+	top: -18px;
+}
+.btn-group1{
+	position: relative;
+	left: 50px;
+	top: 20px;
+}
+.SecondrightMiddle textarea{
+	width: 300px;
+	height: 330px;
+	position: relative;
+	left: 5px;
+	top: 34px;}
+.Secondrightfooter{
+	position: relative;
+	left: 2px;
+	top: 40px;
+}
+/* 短信资费标准 */
+.Thirdframe { 
+	position: relative;
+	left: 20%;
+	top: -40%;
+	width: 59%;
+	height: 8%;
+	margin: 10px 1px;
+	padding: 50px 20px ;
+	line-height: 19px;
+	border: 8px solid   #AA4EB7;}
+.Thirdframe p{
+	color: #8C2A2C;
+	font-weight: bold;
+	text-align: center;
+	font-size: 19px;
+}

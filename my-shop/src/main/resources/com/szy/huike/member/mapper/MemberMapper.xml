@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.szy.huike.member.dao.MemberMapper">
+
+	
+
+		
+<!--    List<MemberGrade> showGrade();  //查询所有会员等级详细信息 -->
+	<select id="showGrade" resultType="com.szy.huike.member.pojo.MemberGrade" parameterType="int">
+ 		select * from mem_grade where grade_id = #{gradeId}
+<!-- 		select * from mem_grade  -->
+	</select>
+
+ 	
+<!-- 	MemberfindMemberById(int gradeId); //查找当前id的等级信息  -->
+	<select id="findMemberById" parameterType="int" resultMap="myAssociation">
+		select * from member where mem_id = #{id}
+	</select>
+	
+	
+	<resultMap type="com.szy.huike.member.pojo.Member" id="myAssociation" > 
+	<id column="mem_id"  property="memId"/>
+	<result column="mem_name" property="memName"/>
+	<result column="mem_grade_name" property="memGradeName"/>
+	<result column="mem_pwd" property="memPwd"/>
+	<result column="mem_card_name" property="memCardName"/>
+	<result column="mem_bir_type" property="memBirType"/>
+	<result column="mem_birthday" property="memBirthday"/>
+	<result column="mem_sex" property="memSex"/>
+	<result column="mem_note" property="memNote"/>
+	<result column="mem_tel" property="memTel"/>
+	<result column="recommend_name" property="recommendName"/>
+	<result column="sell_card_money" property="sellCardMoney"/>
+	<result column="mem_card_state" property="memCardState"/>
+	<result column="mem_card_expires" property="memCardExpires"/>
+		<association  property="grade" column="grade_id"  select="showGrade">
+		
+<!-- 		<id column="grade_id" property="gradeId"/> -->
+<!-- 		<result column="grade_name" property="gradeName"/> -->
+<!-- 		<result column="grade_exchange_ratio" property="gradeExchangeRatio"/> -->
+<!-- 		<result column="grade_general_dis_ratio" property="gradeGeneralDisRatio" /> -->
+<!-- 		<result column="grade_serve_dis_ratio" property="gradeServeDisRatio" /> -->
+<!-- 		<result column="grade_score" property="gradeScore" /> -->
+		
+		</association> 
+	</resultMap>   
+
+
+
+<!-- <insert id="saveMember" parameterType="com.szy.huike.member.pojo.Member"> -->
+<!-- 		insert into member (memName,memGrade,memPwd,memCardNum,memBirType, -->
+<!-- 		memBirthday,memSex,memNote,memTel,recommendName,sellCardMoney, -->
+<!-- 		memCardBalance,memCardScore, -->
+<!-- 		memCardState,memCardExpires) values -->
+<!-- 		(#{memName},#{memGrade},#{memPwd},#{memCardNum},#{memBirType}, -->
+<!-- 		#{memBirthday},#{memSex},#{memNote},#{memTel},#{recommendName},#{sellCardMoney}, -->
+<!-- 		#{memCardBalance},#{memCardScore}, -->
+<!-- 		#{memCardState},#{memCardExpires} ) -->
+<!-- 	</insert> -->
+
+
+<!-- 	int saveMember(Member member);  //保存会员信息  // 还差一个保存员工对应等级的id的项 -->
+<insert id="saveMember" parameterType="com.szy.huike.member.pojo.Member">
+		insert into member (mem_name,mem_grade_name,mem_pwd,mem_card_num,mem_bir_type,
+		mem_birthday,mem_sex,mem_note,mem_tel,recommend_name,sell_card_money,
+		mem_card_balance,mem_card_score,
+		mem_card_state,mem_card_expires,mem_reg_time) values
+		(#{memName},#{memGradeName},#{memPwd},#{memCardNum},#{memBirType},
+		#{memBirthday},#{memSex},#{memNote},#{memTel},#{recommendName},#{sellCardMoney},
+		#{memCardBalance},#{memCardScore},
+		#{memCardState},#{memCardExpires},now() )
+		
+	</insert>
+	
+<!-- 	保存等级信息 -->
+	<insert id="saveMemberGrade" parameterType="com.szy.huike.member.pojo.MemberGrade">
+			insert into mem_grade (grade_name,grade_exchange_ratio,grade_general_dis_ratio,grade_serve_dis_ratio,grade_score,grade_state) values
+			(#{gradeName},#{gradeExchangeRatio},#{gradeGeneralDisRatio},#{gradeServeDisRatio},#{gradeScore},1)
+	</insert>
+<!-- 	 查询总条数记录,为分页做准备 -->
+	<select id="getCount"  parameterType="string"  resultType="long">
+	 select count(*) from mem_grade where grade_name like #{cname} and grade_state=1
+	
+	</select>
+	
+<!-- 	分页查询 -->
+	<select id="showMemberGradeForPage" parameterType="map" resultType="com.szy.huike.member.pojo.MemberGrade">
+	select grade_id,grade_name,grade_exchange_ratio,grade_general_dis_ratio,grade_serve_dis_ratio,grade_score from mem_grade where grade_name like
+	#{name} and grade_state = 1 order by grade_id asc limit #{begin},#{size}
+	</select>
+	
+<!-- 	int updateMemberGrade(MemberGrade memberGrade);  //修改会员等级信息 -->
+	<update id="updateGradeById" parameterType="int">
+	 update mem_grade set grade_name=#{gradeName},grade_exchange_ratio=#{gradeExchangeRatio},
+	 grade_general_dis_ratio=#{gradeGeneralDisRatio},grade_serve_dis_ratio=#{gradeServeDisRatio},grade_score = #{gradeScore})
+	</update>
+	
+<!-- 	List<MemberGrade> showGradeName();   //查询所有会员等级-->
+	<select id="showGradeName" resultType="com.szy.huike.member.pojo.MemberGrade">
+		select grade_id,grade_name from mem_grade where grade_state = 1
+	</select>
+
+
+
+<!-- 	void delMemberGradeById(int gradeId);  //删除当前等级  实际上是把id的状态改成0 -->
+	<update id="delMemberGradeById" parameterType="int">
+		update mem_grade set grade_state=0 where grade_id = #{gradeId}
+	</update>
+	
+	
+<!-- 	MemberGrade findMemberGradeById(int gradeId); //查找当前id的等级信息 -->
+	<select id="findMemberGradeById" parameterType="int" resultType="com.szy.huike.member.pojo.MemberGrade">
+		select * from mem_grade where grade_id = #{id}
+	</select>
+
+	
+
+
+
+
+	
+
+</mapper>

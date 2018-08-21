@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>汇客会员管理系统</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <form class="form-signin">
+        <h2 class="form-signin-heading">汇客会员登录</h2>
+        <label for="inputtext" class="sr-only">text</label>
+        <input type="text" autofocus="请输入正确格式" id="inputtext" class="form-control" placeholder="用户名/由大小写字母、数字组成3-15位" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="密码不能含有非法字符，长度4-10之间" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> 记住密码
+          </label>
+          <label>
+            <input type="checkbox" value="remember-me">自动登陆
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登陆</button>
+      </form>
+
+    </div> <!-- /container -->
+
+
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>

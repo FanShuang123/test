@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/consumption/Membership.css">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+<body>
+        <div class="url">当前位置：
+                <span>汇客会员管理系统</span>->
+                <span>消费收银</span>
+                <span>->会员消费</span>
+                    
+            </div>
+           <div class="search">
+                   <form action="" method="get">
+                                    <input type="hidden" name="m" value="content"/>
+                                    <input type="hidden" name="c" value="index"/>
+                                    <input type="hidden" name="a" value="lists"/>
+                                    <input type="hidden" name="catid" value="3"/>
+                                    <span>卡号/手机号(F2):</span>
+                                    <input type="text" name="q" id="q" placeholder="输入号码"/>
+                                    <input type="submit" value="搜索" class="sub" style="cursor:pointer;"/>
+                                    <input name="num" type="checkbox" value="1"/>散户消费
+                                    <input type="submit" value="修改会员" class="sub" style="cursor:pointer;"/>
+                                    <input type="submit" value="清空会员" class="sub" style="cursor:pointer;"/>
+                            </div>	
+            <div class="hyzl"> 会员资料:</div>
+            <div class="kj">
+                     <div class="data"  >请先刷卡...</div>
+                 </div>
+                        <table class="hovertable" >
+                            <tr >
+                                    <td >普通消费</td>
+                                    <td>商品消费</td>
+                                    <td>积分兑换礼品</td>
+                                    <td>会员备注/相片</td>
+                                </tr>
+                    </table>
+            <div class="cant">
+            <div class="font">消费日期: 
+                        <span class="time">2018年10月1日 00：00：00</span>
+                            <div class="lsxf">
+                                <a href="#">历史消费</a>
+                                注:此处的消费设置对普通消费和商品消费均有效
+                        </div>
+                     </div>
+            <div class="er">
+                        请输入消费金额:
+                        <input type="number" placeholder="￥0.00"/> 
+                        <span> 无优惠信息</span>
+                      </div>
+            <div class="san">
+                         折后总金额:
+                         <input type="number" placeholder="￥0.00"/> 
+                           活动优惠：  
+                           <span>无优惠</span>
+                       </div>
+            <div class="si">
+                        <a href="#">员工提成</a>
+                        此处金额会按会员等级自动打折，您也可以直接在"折后总金额"中输入！
+                    </div>
+              <div class="wu">可自动累计积分数量:<input type="number" placeholder="0"/> </div>
+                <div class="line1">备注文字</div>
+               <textarea name="" id="remark"></textarea>
+               <div id="ticket">
+                            <input name="num" type="checkbox" value="1" />打印消费小票
+                            <div id="result">清算</div>  
+                   </div>   
+            </div>
+</body>
+</html>
+<script src="../../js/time.js"></script>

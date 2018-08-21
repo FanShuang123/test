@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/associator/add.css  ">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+    <body>
+   
+         <!-- 地址 -->
+         <div class="url">当前位置：
+            <span>汇客会员管理系统</span>->
+            <span>会员管理</span>->
+            <span>增加新会员</span>
+    </div>
+     <form action="" id="form1">
+<!-- 这里是必填内容 -->
+<div id="content">
+    <div id="content-l">
+             <div class="line">以下为必填内容</div>
+        <div class="single">会员卡号：<input class="detailed" type="text" name="memCardNum" value=""> 刷卡自动刷出卡号！</div>
+        <div class="single">会员姓名：<input class="detailed" type="text" name="memName" value=""></div>
+        <div class="single">手机号码：<input class="detailed" type="text" name="memTel" value=""></div>    
+        <div class="single">卡片密码：<input class="detailed" type="text" name="memPwd" value=""></div>
+        <div class="single">确认密码：<input class="detailed" type="text" value=""></div>
+        <div class="single">会员等级：
+              <select id="opt" name="memGrade" >
+                
+              </select>
+              <a href="grade.html">等级</a>
+        </div>
+        <!-- 这里是选填内容 -->
+        <div class="line1">以下内容选填</div>
+        <div class="single" id="special">会员性别： 
+            <select id="opt" name="memSex" >
+                    <option value="未知">未知</option>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+       </div>                                                                            
+       <div class="single" id="special" >会员生日：
+       <input id="man" type="radio" checked="checked" name="memBirType" value="公历" />公历
+       <input id="woman" type="radio"  name="memBirType"value="农历"/>农历 
+       
+       <input id="" type="text"  onclick="WdatePicker({dateFmt:'MM-dd'})" name="memBirthday"/> 
+
+         </div>
+             
+    	 <div class="single" id="special">
+            <input type="checkbox" class="yes" value="rock" checked>设置卡片过期时间（到期则此卡自动失效）
+            <input type="text"  class="no" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" disabled placeholder="">
+        </div>   
+        <div class="single" >卡片状态：
+              <select id="opt" name="memCardState" >
+                    <option value="正常">正常</option>
+                    <option value="挂失">挂失</option>
+                    <option value="锁定">锁定</option>                         
+              </select>
+         </div>
+        <div class="single" id="money">售卡金额：<input class="detailed" type="number" name="sellCardMoney"  value="" placeholder="￥0.00"></div>    
+        <div class="single">账户余额：<input class="detailed" type="number" value="" name="memCardBalance" placeholder="￥0.00"></div>
+        <div class="single">积分数量：<input class="detailed" type="number" value="" name="memCardScore"placeholder="0"></div>
+        <div class="single">&nbsp推&nbsp荐&nbsp人：<input class="detailed" type="text" name="recommendName" value=""> 
+             <a href="#">查找</a>  推荐人姓名：</div>
+        <div id="single">计次充值:<a href="#">选择</a></div>
+     </div>
+       
+    <!-- 头像 -->
+    <div id="content-r">
+            <div class="line2">会员头像</div>
+            <div class="photo">
+               <img src="#" alt="">
+            </div>
+            <div class="transformation">
+                <input type="checkbox"  value="rock" checked>
+                积分是否可以转换成等级？
+            </div>
+    </div>
+</div>
+  <!-- 扩展和备注 -->
+<div class="extend">
+        <div class="remarks active">会员扩展属性（选填）</div>
+        <div class="remarks">会员备注信息</div><br>
+        <div id="mark"><textarea name="" id="text" cols="30" rows="10" style="color:purple"></textarea></div>
+        <div id="mark"><textarea name="" id="text" cols="30" rows="10" style="color:peru"></textarea></div>
+</div>   
+<div class="transformation">
+        <input type="checkbox"  value="rock" checked>
+        
+        打印充值小票
+    </div>
+<div class="save" id="save">保存</div> 
+    </div>
+    </form>
+</body>
+</html>
+<script src="../../js/add.js"></script>
+<script src="../../js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="../../js/My97DatePicker/WdatePicker.js" ></script>
+<script src="../../js/Ajax/member.js"></script>
+
+<!-- onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" -->

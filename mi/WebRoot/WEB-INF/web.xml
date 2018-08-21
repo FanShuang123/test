@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+ 
+  <servlet>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>com.web.servlet.admin.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GoodsServlet</servlet-name>
+    <servlet-class>com.web.servlet.admin.GoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UsersServlet</servlet-name>
+    <servlet-class>com.web.servlet.admin.UsersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShopServlet</servlet-name>
+    <servlet-class>com.web.servlet.admin.ShopServlet</servlet-class>
+  </servlet>
+  
+
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>com.web.servlet.client.IndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CarServlet</servlet-name>
+    <servlet-class>com.web.servlet.client.CarServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrdersServlet</servlet-name>
+    <servlet-class>com.web.servlet.client.OrdersServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  
+  <servlet-mapping>
+    <servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/categoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsServlet</servlet-name>
+    <url-pattern>/goodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UsersServlet</servlet-name>
+    <url-pattern>/usersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopServlet</servlet-name>
+    <url-pattern>/shopServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/indexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CarServlet</servlet-name>
+    <url-pattern>/carServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrdersServlet</servlet-name>
+    <url-pattern>/ordersServlet</url-pattern>
+  </servlet-mapping> 
+  
+</web-app>

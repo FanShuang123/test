@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/commodity/add.css">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+        <div class="url">当前位置：
+                <span>汇客会员管理系统</span>->
+                <span>商品管理</span>->
+                <span>增加新商品</span>
+        </div>
+  <!-- 这里是必填内容 -->
+    <div id="content">
+        <div id="content-l">
+                 <div class="line">产品信息必填内容</div>
+            <div class="single">产品编号：<input class="detailed" type="text" >
+                <span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="" >
+                    系统自动创建编号
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="" value="">产品编号自动排序</span></div>
+            <div class="single">产品名称：<input class="detailed" type="text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    产品简码：
+                    <input class="detailed" type="text" value=""></div>
+            <div class="single">产品分类：
+                 <select id="opt">
+                        <option value="">=请选择=</option>
+                        <option value="">默认产品类别</option>
+                            
+                    </select>
+                        &nbsp;<a href="#" onclick="openwin0();">分类管理</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;产品单位：<select id="opt">
+                    <option value="">个</option>
+                        <option value="">件</option>
+                        <option value="">次</option>
+                    </select>&nbsp;<a href="#" onclick="openwin1();">设置</a>
+            </div>  
+            <div class="single">零售价格：<input class="detailed" type="text"  placeholder="￥0.00"></div>
+            <div class="single">会员价：<input class="detailed" type="text"  placeholder="￥0.00">
+            </div>
+            <!-- 这里是选填内容 -->
+            <div class="line1">以下内容选填</div>
+                 <div class="single" id="special">积分数量：<input class="detailed" type="text"  placeholder="0"> <a href="#">帮助</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最低折扣：<input class="detailed" type="text" placeholder="0"> <a href="#">帮助</a>
+           </div>                                                                            
+           <div class="single" id="special" >产品类型：<select id="opt">
+              <option value="">普通产品</option>
+                <option value="">服务类产品</option>
+                <option value="">计时产品</option>
+              </select>
+
+               <a href="#">帮助</a>
+                 </div>
+             <div class="single" id="special">参考进价：
+                 <input class="detailed" type="text"  placeholder="￥0.00">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="" value="" checked>
+                消费此产品（服务）自动累计积分&nbsp;&nbsp;
+                <a href="">帮助</a>
+            </div>   
+        </div>
+        <div class="extend">
+                <div class="remarks">产品扩展属性（选填）</div>
+                <div id="mark">
+                     <textarea name="" id="text" cols="30" rows="10"></textarea>
+                </div>
+                <div class="save">保存</div> 
+        </div>
+    </div>
+</body>
+</html>

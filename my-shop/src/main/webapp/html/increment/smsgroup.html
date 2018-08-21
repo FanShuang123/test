@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/increment/smsgroup.css">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+                <!-- 地址 -->
+                <div class="url">当前位置：
+                            <span>汇客会员管理系统</span>->
+                            <span>增值服务</span>->
+                            <span>短信群发</span>
+                    </div>
+                    <!-- tab -->
+                        <div class="search">
+                             <input type="submit" value="自定义群发" class="sub" style="cursor:pointer;"/>
+                              <input type="submit" value="批量会员群发" class="sub" style="cursor:pointer;"/>
+                                <input type="submit" value="短信资费标准" class="sub" style="cursor:pointer;"/>
+        </div>
+
+                        <div class="words">
+                        特别声明：严禁使用此群发功能发送涉及色情、暴露、低俗、反动等言论，一经发现封锁序列号，没收余额！<br><span>由此产生的相关经济纠纷以及法律责任，由发送者负全责！</span>
+                        </div>
+         <!-- 自定义群发 -->
+        <div class="frame ">
+         <div class="leftframe ">	
+                        <div class="line">待发送的手机号码</div>
+                        <textarea class="intext"></textarea>
+                        <div class="txt">
+                        <a href="#">从txt文件导入手机号码</a>
+                        </div>	
+         </div>
+                        <div class="rightframetitle">待发送的信息内容</div>
+         <div class="rightframe ">
+                 
+                        <span>短信模块：</span>
+                        <div class="btn-group">
+                <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 充值短信 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">自定义</a></li>
+                  <li><a href="#">消费短信</a></li>
+                  <li><a href="#">充值短信</a></li>
+                  <li><a href="#">充次短信</a></li>
+                  <li><a href="#">积分兑换</a></li>
+                          <li><a href="#">新卡注册</a></li>
+                 </ul>
+                 </div>
+                        <a href="#">设置</a>
+                    <div class="Middle">
+                    <span>发送内容：</span><textarea class="intext">
+         尊敬的客户，您的尾号为{LCardID}的会员卡，于{Time}在本店消费{TempMoney}元，账户余额{Money}元， 感谢您的光临！
+         尊敬的客户，您的尾号为{LCardID}的记次卡，于{Time}在本店充次{TempMoney}元，账户余{Count}次，感谢您的光临！
+         尊敬的客户，您的尾号为{LCardID}的会员卡，于{Time}在本店花费{TempPoint}分兑换礼品，账户余额 {Point}分，感谢您的光临！
+         尊敬的客户，您已成为本店会员，期待您的光临！</textarea>
+                    </div>
+                    <div class="footer">
+                    <span>发送时间：</span>即时发送<input name="num" type="checkbox" value="1"/>定时发送<input name="num" type="checkbox" value="1"/>
+                    </div>
+                    <div class="search1">
+                    <input type="submit" value="马上发送" class="sub" style="cursor:pointer;"/>
+                        </div>
+         </div>	
+        </div>
+           <!-- 批量会员群发 -->
+        <div class="Secondframe">
+          <div class="Secondleftframe">
+                 <div class="Secondleftsearch">
+                          <span>卡号/手机号(F2):</span>
+                  <input type="text" name="q" id="q"/>
+                  <input type="submit" value="搜索" class="sub" style="cursor:pointer;"/>
+                 </div>
+                 <div class="Secondleftmenu">
+                  <p>按会员类型：</p><select name="hello">
+                                    <option value="1">全部</option>
+                                     <option value="2">默认等级</option>
+                                       </select>
+                  </div>
+                 
+                  <table class="table table-bordered">
+                <tr>
+                        <td width="30px" > </td><td >会员卡号</td><td >姓名</td><td>联系电话</td>	
+               </tr>
+              </table>
+          </div>
+                  
+          <div class="Secondrightframe">
+                <div class="btn-group1">
+                <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 充值短信 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">自定义</a></li>
+                  <li><a href="#">消费短信</a></li>
+                  <li><a href="#">充值短信</a></li>
+                  <li><a href="#">充次短信</a></li>
+                  <li><a href="#">积分兑换</a></li>
+                          <li><a href="#">新卡注册</a></li>
+                 </ul>
+            </div>
+                        <span><a href="#">设置</a></span>
+                    <div class="SecondrightMiddle">
+                    <textarea class="intext">
+         尊敬的客户，您的尾号为{LCardID}的会员卡，于{Time}在本店消费{TempMoney}元，账户余额{Money}元， 感谢您的光临！
+         尊敬的客户，您的尾号为{LCardID}的记次卡，于{Time}在本店充次{TempMoney}元，账户余{Count}次，感谢您的光临！
+         尊敬的客户，您的尾号为{LCardID}的会员卡，于{Time}在本店花费{TempPoint}分兑换礼品，账户余额 {Point}分，感谢您的光临！
+         尊敬的客户，您已成为本店会员，期待您的光临！</textarea>
+                    </div>
+                    <div class="Secondrightfooter">
+                    <span>发送时间：</span>即时发送<input name="num" type="checkbox" value="1"/>定时发送<input name="num" type="checkbox" value="1"/>
+                    </div>
+          </div>
+        </div>
+           <!-- 短信资费标准 -->
+                <div class="Thirdframe">
+                        <p>对不起您还未开启短信群发功能！<br>请联系软件销售商获取相关序列号和密码，然后开启功能！</p>
+                        </div>
+            
+</body>
+</html>

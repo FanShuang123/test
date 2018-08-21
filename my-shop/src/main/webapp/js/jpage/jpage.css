@@ -1,0 +1,60 @@
+.jpage {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+.jpage input {
+	border: 1px solid #E5E5E5;
+	width: 40px;
+	line-height: 30px;
+	height:30px;
+	margin-right: 5px;
+	margin-left: 5px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.jpage a, .jpage strong {
+	color:#1024ee;
+	background: white;
+	border: 1px solid #E5E5E5;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 32px;
+	margin-right: 5px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	padding-left:10px;
+	padding-right: 10px;
+}
+
+.jpage strong {
+	border-color: whiteSmoke;
+	color: #333;
+}
+
+.jpage .c {
+	border-color: whiteSmoke;
+	color: whiteSmoke;
+	cursor: default;
+}
+
+.jpage .c:hover {
+	background: white;
+	border-color: whiteSmoke;
+}
+
+.jpage a:hover {
+	background: #FBFBFB;
+	border-color: #D4D4D4;
+	box-shadow: 0 1px 3px rgba(188, 188, 188, 0.2);
+}
+
+.jpage .nums {
+	color: #999;
+	font-size: 12px;
+	margin-left:10px;
+}

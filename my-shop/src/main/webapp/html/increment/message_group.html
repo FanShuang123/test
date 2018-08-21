@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>短信群发</title>
+		<link rel="stylesheet" type="text/css" href="../../css/increment/message_group.css"/>
+		<script src="../../js/My97DatePicker/WdatePicker.js" ></script>
+		<script type="text/javascript" src="../../js/message_group.js"></script>
+	</head>
+	<body>
+		<div style="position: relative;">
+			<!-- 地址 -->
+	        <div class="url">当前位置：
+	            <span>汇客会员管理系统</span>->
+	            <span>会员管理</span>->
+	            <span>短信群发</span>
+	    	</div>
+	    	<!--内容-->
+	    	<div class="con">
+	    		<!--特别声明-->
+	    		<span class="font_sm_1">特别声明：
+	    		严禁使用此群发功能发送涉及色情、暴露、低俗、反动等言论，一经发现封锁序列号，没收余额！</span><br />
+				<span class="font_sm_2"> 由此产生的相关经济纠纷以及法律责任，由发送者负全责！</span>
+				<!--主要功能-->
+				<div class="main_con">
+					<!--按钮-->
+					<div class="megs clearfix">
+	    				<!--自定义群发-->
+		    			<div class="msg_group fl com">
+		    				<input type="button" class="but" value="自定义群发" />
+		    			</div>
+		    			<!--批量会员群发-->
+		    			<div class="user_msg_group fl com">
+		    				<input type="button" class="but" value="批量会员群发" />
+		    			</div>
+		    			<!--短信资费标准-->
+		    			<div class="msg_money fl com">
+		    				<input type="button" class="but" value="短信资费标准" />
+		    			</div>
+	    			</div>
+	    			<!--功能-->
+	    			<!--自定义群发-->
+	    			<div class="megs_cont clearfix">
+	    				<!--导入手机号-->
+	    				<div class="tel fl">
+	    					<div class="tel_top">待发送的手机号码</div>
+	    					<textarea name="tel" rows="21" cols="26"></textarea>
+	    				</div>
+	    				<!--短信模板-->
+	    				<div class="msg_model fl">
+	    					<div class="msg_model_top">待发送的短信内容</div>
+	    					<!--短信模板-->
+	    					<div class="dx">
+	    						短信模板：
+	    						<select onclick="sel()" id="sel_1">
+	    							<option value="1">自定义</option>
+	    							<option value="2">消费短信</option>
+	    							<option value="3">充值短息</option>
+	    							<option value="4">首次短信</option>
+	    							<option value="5">积分兑换</option>
+	    							<option value="6">新卡兑换</option>
+	    						</select>
+	    						<a href="javascript:void(0)">设置</a>
+	    					</div>
+	    					<!--发送内容-->
+	    					<div class="dx_con">
+	    						发送内容：
+	    						<textarea name="" rows="10" cols="43" id="cen"></textarea>
+	    					</div>
+	    					<!--发送时间-->
+	    					<div class="dx_time">
+	    						发送时间：
+	    						<input type="radio" name="send" id="ds" value="" checked="checked" onclick="js()"/>即时发送
+	    						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    						<input type="radio" name="send" value="" onclick="ds()" />定时发送<br />
+	    						<input type="text" name="" id="sj" value="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" disabled="disabled"/>
+	    						
+	    					</div>
+	    				</div>
+	    				<!--底部-->
+	    				<div class="msg_con_bot fl">
+	    					<a href="javascript:void(0)">从txt文件导入手机号码</a>
+	    				</div><div class="msg_con_bots fl">
+	    					<input type="button" value="马上发送" />
+	    				</div>
+	    			</div>
+	    			<!--批量会员群发-->
+	    			<div class="megs_cont">
+	    				<!--卡号，手机部分-->
+			    		<div class="megs_cont_left fl">
+			    			<span class="fl font_tel">卡号/手机:</span>
+			    			<div class="input_tel fl">
+			    				<input type="text" value=""/>
+			    				<div class="input_tel_bg fr" onclick="seach()"></div>
+			    			</div>
+			    			<div class="seach fl">
+			    				<input type="button" value="搜索" />
+			    			</div>
+			    			<p style="clear: both;"></p>
+			    			<div class="megs_con_cen">
+				    			按会员类型：
+				    			<select>
+				    				<option value=""></option>
+				    				<option value="">全部</option>
+				    				<option value="">默认等级</option>
+				    			</select>
+				    		</div>
+				    		<table cellspacing="0" cellpadding="3" width="330" style="border: 1px solid #aeaeae;margin-top: -4px;">
+								<tr>
+									<td width="18" class="tr_td"></td>
+									<td class="tr_td">会员卡号</td>
+									<td class="tr_td">姓名</td>
+									<td>联系电话</td>
+								</tr>
+							</table>
+							<div class="msg_con_cen">
+			    					<input type="button" value="马上发送" />
+			    			</div>
+			    		</div>
+			    		
+			    		<div id="search_result">
+			    			<table cellspacing="0" cellpadding="3" width="368" style="border: 1px solid #aeaeae;margin-top: -4px;">
+								<tr>
+									<td width="18" class="tr_td"></td>
+									<td class="tr_td">支付金额</td>
+									<td class="tr_td">计次产品名称</td>
+									<td class="tr_td">次数</td>
+									<td class="tr_td">操作员</td>
+									<td>添加时间</td>
+								</tr>
+							</table>
+							<div class="result_bottom">
+								<span style="font-size:12px;">此处列举的仅为最近添加的20个会员！查找单个会员请使用搜索功能<br></span>
+								卡号/姓名/手机
+								<input type="text" name="tel" id="" size="7"/>
+								<input type="button" value="选择"class="xz"/>
+							</div>
+			    		</div>
+			    		
+			    		<div class="megs_cont_right fr">
+			    			<div class="megs_cont_right_t">待发送的短信内容</div>
+			    			<div class="dx">
+	    						<select onclick="sel2()" id="sel_2">
+	    							<option value="1">自定义</option>
+	    							<option value="2">消费短信</option>
+	    							<option value="3">充值短息</option>
+	    							<option value="4">首次短信</option>
+	    							<option value="5">积分兑换</option>
+	    							<option value="6">新卡兑换</option>
+	    						</select>
+	    						<a href="javascript:void(0)">设置</a>
+	    					</div>
+	    					<textarea name="" id="cen_2" rows="10" cols="35" style="margin-left: 10px;"></textarea>
+			    			<!--发送时间-->
+	    					<div class="dx_time">
+	    						发送时间：
+	    						<input type="radio" name="send2" id="ds" value="" checked="checked" onclick="js()"/>即时发送
+	    						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    						<input type="radio" name="send2" value="" onclick="ds()" />定时发送<br />
+	    						<input type="text" name="" id="sjs" value="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" disabled="disabled"/>
+	    					</div>
+			    		</div>
+	    			</div>
+	    			<!--资费标准-->
+	    			<div class="megs_cont">
+	    				<div id="Thirdframe">
+                        	<span>对不起您还未开启短信群发功能！<br>
+                        	      请联系软件销售商获取相关序列号和密码，然后开启功能！
+                        	</span>
+                         </div>
+	    			</div>
+					</div>
+	    	</div>
+		</div>
+	</body>
+</html>

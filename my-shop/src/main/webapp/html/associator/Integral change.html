@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/associator/Integral change.css">
+</head>
+<body>
+   <!-- 当前位置 -->
+    <div class="url"> 当前位置：
+            <span>汇客会员管理系统</span>->
+            <span>会员管理</span>->
+            <span>会员积分变动记录</span>
+       </div>
+   <!-- 主体 -->
+      <div class="box">
+             <!-- 手机号 -->
+             <div id="search">
+                    <span>卡号/手机：</span>
+                    <input type="number" maxlength="11"  onkeyup="value=value.replace(/[^\d]/g,'') " >
+                    <input type="button" value="搜索" class="button">
+             </div>
+             <!-- 积分变动 -->
+             <div class="title">积分变动</div>
+             <div class="change">
+                 <div class="item">会员卡号： <span></span></div>
+                 <div class="item">会员姓名： <span></span></div>
+                 <div class="item">账户积分： <span></span></div>
+                 <div class="item">变动类型： 
+                       <input type="radio" name="operation" checked>增加
+                       <input type="radio" name="operation">扣除 
+                 </div>
+                 <div class="item">变动数额：<input type="number" onkeyup="value=value.replace(/[^\d]/g,'') " ></div>    
+                 <div class="item">确定</div>
+             </div>      
+             <!-- 积分清零  -->
+             <div class="title">积分清零</div>
+             <div class="change">
+                    <div class="function">当前会员积分清零</div>
+                    <div class="function">所有会员积分清零</div>
+             </div>    
+      </div>
+</body>
+</html>

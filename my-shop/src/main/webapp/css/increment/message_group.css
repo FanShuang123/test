@@ -1,0 +1,236 @@
+.con{
+				width: 760px;
+				height: 510px;
+				margin: 30px auto 0px;
+				font-size: 14px;
+			}
+			/*浮动*/
+			.fl{
+				float: left;
+			}
+			.fr{
+				float: right;
+			}
+			/*清除浮动*/
+			.clearfix:after{
+				height: 0;
+				display: block;
+				content: "";
+				visibility: hidden;
+				clear: both;
+			}
+			/*特别声明*/
+			.font_sm_1{
+				color: #800000;
+				font-weight: 700;
+			}
+			.font_sm_2{
+				color: #800000;
+				font-weight: 700;
+				padding-left: 74px;
+			}
+			/*三个按钮切换*/
+			.megs{
+				margin-top: 6px;
+				height: 27px;
+			}
+			.megs .com input{
+				border: 0;
+				width: 120px;
+				height: 28px;
+			}
+			.user_msg_group input{
+				background: #1acdff;
+			}
+			.msg_group input{
+				background: #1acdff;
+			}
+			.msg_money input{
+				background: #00B5F6;
+			}
+			/*三个按钮对应的内容*/
+			.megs_cont{
+				position: relative;
+				width: 88%;
+				margin: 0;
+				padding: 10px 0 0 20px;
+				height: 420px;
+				border: 1px solid #1acdff;
+				display: none;
+			}
+			#Thirdframe{
+				width: 370px;
+				height: 50px;
+				margin: 160px auto;
+				padding: 8px 8px 0 8px;
+				border: 8px solid   #00BEEE;
+				line-height: 23px;
+				font-weight: 700;
+			}
+			/*自定义群发左边*/
+			.tel{
+				width: 32%;
+				margin-left: -10px;
+				padding:10px 0 0 5px;
+				height: 345px;
+			}
+			.msg_model{
+				margin-left:8px;
+				width: 65%;
+				height: 345px;
+				margin-top: 10px;
+				border: 1px solid #00beee;
+				border-top: 0;
+			}
+			.tel_top{
+				padding: 0 1px 0;
+				margin-bottom: 10px;
+			    line-height: 1px;
+			    border-left: 18px solid #1acdff;
+			    border-right: 80px solid #1acdff;
+			    text-align: center;
+			    color: #1acdff;
+			    box-sizing: border-box;
+			    font-size: 12px;
+			}
+			/*短信模板*/
+			.msg_model_top{
+				padding: 0 1px 0;
+			    line-height: 1px;
+			    border-left: 30px solid #1acdff;
+			    border-right: 270px solid #1acdff;
+			    text-align: center;
+			    color: #1acdff;
+			    box-sizing: border-box;
+			}
+			.dx{
+				height: 30px;
+				margin: 15px 10px 15px 10px;
+			}
+			.dx select{
+				background: #e5f1fb;
+				width: 110px;
+			}
+			.dx_con{margin-left: 10px;}
+			.dx_con textarea{vertical-align: top;}
+			.dx_time{margin: 15px 10px 15px 10px;}
+			#sj{margin: 15px 10px 15px 80px;}
+			.msg_con_bot{
+				width: 150px;
+				height: 30px;
+				margin-top: 15px;
+			}
+			.msg_con_bots input{
+				height: 30px;
+				width: 80px;
+				margin-top: 15px;
+				margin-left: 160px;
+				border: 0;
+				border-radius: 10px;
+				background: #a0a0a0;
+			}
+			/*批量群发*/
+			/*电话*/
+			.megs_cont_left{
+				width: 500px;
+				height: 40px;
+				margin-top: 3px;
+				vertical-align: middle;
+			}
+			/*电话输入文字*/
+			.font_tel{
+				display: inline-block;
+				height: 32px;
+				font: 12px/32px 宋体;
+			}
+			/*电话输入框*/
+			.megs_cont_left .input_tel input{
+				margin: 0;
+				padding: 0;
+				border: 1px #aaa solid;
+				border-right: 0;
+				font-size: 20px;
+				width: 150px;
+				height: 25px;
+			}
+			.input_tel_bg{
+				width: 20px;
+				height: 25px;
+				border: 1px #aaa solid;
+				border-left:0;
+				background: url(../../imgs/associator/seach_key.PNG) no-repeat right;
+			}
+			/*搜索*/
+			.seach input{
+				border: 0;
+				width: 50px;
+				height: 26px;
+				border-radius: 10px;
+				background: #00b5f6;
+				margin-top: 3px;
+				margin-left: 10Px;
+			}
+			.seach input:hover{
+				background: #46eeff;
+			}
+			.megs_con_cen select{
+				background: #e5f1fb;
+				width: 170px;
+				height: 25px;
+				margin-left: 8px;
+				margin-bottom: 15px;
+			}
+			.tr_td{border-right: 1px solid #aeaeae;}
+			.msg_con_cen input{
+				height: 30px;
+				width: 80px;
+				margin-top: 260px;
+				margin-left: 250px;
+				border: 0;
+				border-radius: 10px;
+				background: #a0a0a0;
+			}
+			.megs_cont_right{
+				height: 350px;
+				width: 290px;
+				margin-top: -30px;
+				margin-right: 5px;
+				border: 1px solid #1acdff;
+				border-top: 0;
+			}
+			.megs_cont_right_t{
+				padding: 0 1px 0;
+			    line-height: 1px;
+			    border-left: 30px solid #1acdff;
+			    border-right: 130px solid #1acdff;
+			    text-align: center;
+			    color: #1acdff;
+			    box-sizing: border-box;
+			}
+			#sjs{margin: 15px 10px 15px 80px;}
+			#search_result{
+				width: 370px;
+				height: 330px;
+				border: 3px solid #00beee;
+				z-index: 100;
+				background: #fff;
+				position: absolute;
+				left: 248px;
+				top: 40px;
+				display: none;
+			}
+			.result_bottom{
+				height: 50px;
+				margin-top:258px ;
+			}
+			.xz{
+				width: 70px;
+				height: 25px;
+				line-height: 25px;
+				border: 0;
+				background: #00B5F6;
+				border-radius: 8px;
+			}
+			.xz:hover{
+				background: #46eeff;
+			}

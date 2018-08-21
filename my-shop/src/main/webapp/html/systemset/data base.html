@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/systemset/data base.css">
+</head>
+<body>
+    <!-- 地址 -->
+    <div class="url">当前位置：
+            <span>汇客会员管理系统</span>->
+            <span>系统设置</span>->
+            <span>数据库管理</span>
+        </div>
+    <!-- 备份 -->
+    <div class="search">
+                <input type="submit" id="opt" value="系统数据备份与恢复" class="sub" style="cursor:pointer;"/>
+                <input type="submit" id="opt" value="数据初始化" class="sub" style="cursor:pointer;"/>
+        </div>
+<div class="frame">
+        <div class="line">数据备份</div>
+        <div class="search1">
+                    <span>备份路径:</span>
+                    <input type="text" name="q" id="q"/>
+                    <input type="submit" value="浏览" class="sub" style="cursor:pointer;"/>
+          </div>
+        <div class="search2">
+                     <span>备份进度:</span>
+         </div>
+        <div class="progress1">
+                <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"> </div>
+        </div> 
+            </div>
+        <div class="search3">
+        <input type="submit" value="马上备份" class="sub" style="cursor:pointer;"/>
+        </div>
+        <div class="line1">数据恢复</div>
+        <div class="search4">
+        <span>选择文件:</span>
+        <input type="text" name="q" id="q"/>
+        <input type="submit" value="浏览" class="sub" style="cursor:pointer;"/>
+        </div>
+        
+        <div class="search6">
+                <span>恢复进度:</span>
+        </div>
+            <div class="word">
+                       <p >注意:恢复数据之后需要将软件重启之后，部分软件方可生效。</p>
+            </div>
+                <div class="progress2">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100">
+                </div>
+            </div> 
+        </div>
+        <div class="search5">
+            <input type="submit" value="马上恢复" class="sub" style="cursor:pointer;"/>
+        </div>
+</div>
+
+
+<div class="frame">
+  <div class="words">
+                强烈建议在执行以下操作之前先备份数据库，保证数据安全！
+  </div>
+  
+<div class="find">
+ <input type="submit" value="清空系统全部数据" class="sub" style="cursor:pointer;"/>
+<span>将整个系统的数据全部清除，超级管理员密码还原为空</span>
+ </div>
+<div class="find">
+ <input type="submit" value="清除全部营业数据" class="sub" style="cursor:pointer;"/>
+<span>会员消费数据、礼品兑换数据、积分记录等将被清除。只保留基本数据。</span>
+ </div>
+<div class="find">
+ <input type="submit" value="清除全部日志数据" class="sub" style="cursor:pointer;"/>
+<span>一键清除自动记录的系统日志。</span>
+ </div>
+<div class="find">
+ <input type="submit" value="清除全部库存数据" class="sub" style="cursor:pointer;"/>
+<span>一键清除进销存的数据，商品库存为零。</span>
+ </div>
+ </div>
+</body>
+</html>
+<script src="../../js/data base.js"></script>

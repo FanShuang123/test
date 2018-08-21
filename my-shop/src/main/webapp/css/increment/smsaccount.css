@@ -1,0 +1,111 @@
+@import url(../base.css);
+
+ 
+
+.frame { 
+	position: relative;
+	left: 1%;
+	top: 4%;
+	width: 80%;
+	height: 77%;
+	margin-left: 80px;
+	border: 2px solid skyblue;}
+.line {
+    padding: 0 1px 0;
+    margin: 10px 0;
+    line-height: 1px;
+    border-left: 20px solid aqua;
+    border-right: 500px solid aqua;
+    text-align: center;
+    color: aqua;
+    box-sizing: border-box;
+    font-size: 12px;
+	position: relative;
+	left: 0;
+	top: 160px;
+}
+.line1 {
+    padding: 0 10px 0;
+    margin: 0px 0px;
+    line-height: 1px; 
+	border:1px solid #E1A5A6 ; 
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 12px;
+	position: relative;
+	left: 0;
+	top: -180px;
+}
+
+ .search .sub{
+	position: relative;
+	 left: 89px;
+	 top:32px;
+	width: 11%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+}
+.group{
+	position:absolute;
+	left: 50px;
+	top: 50px;
+}
+.number{
+	position: relative;
+	left: 150px;
+	top: 80px;
+}
+.number input{
+    margin: 5px 5px;
+}
+.Automatic{
+	position:absolute;
+	left: 50px;
+	top: 150px;
+}
+.words{
+	position: relative;
+	left: 60px;
+	top: 130px;
+}
+.words1{
+	position: relative;
+	left: 60px;
+	top: 130px;
+	text-indent:2em;
+	color: #F75356;
+	
+}
+ .search1 .sub{
+	width: 13%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+	 position: relative;
+	 left: 330px;
+	 top:140px;
+}
+ .search2 .sub{
+	width: 13%;
+	height: 100%;
+	color:#0B0909;
+	font-size: 14px;
+	 position: relative;
+	 left: 50px;
+	 top:180px;
+}
+.url{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color: #000;
+    box-sizing: border-box;
+    padding: left 5px; 
+    margin-top: 3px;
+    text-align: center;
+}

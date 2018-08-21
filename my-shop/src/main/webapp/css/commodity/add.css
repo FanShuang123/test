@@ -1,0 +1,109 @@
+@import url(../base.css);
+.save{
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: skyblue;
+    margin-top: 10px;
+}
+.save:hover{
+    background: greenyellow;
+}
+.extend{
+    margin-top:20px; 
+   
+}
+.remarks{
+    box-sizing: border-box;
+    width: 150px ;
+    height: 30px;
+    background:rgb(3, 247, 247);
+    font-size: 14px;
+    text-align: center;
+    line-height:30px;
+    float: left;
+    border: 0.5px solid rgba(0,0,0,0.2);
+    border-radius:3px; 
+}
+
+#mark{
+    border: none;
+    position: relative;
+    margin-top: 5px;
+}
+#mark #text{
+    box-sizing: border-box;
+    width:800px;
+    height: 90px;
+    text-align: left;
+}
+.url{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color: #000;
+    box-sizing: border-box;
+    padding: left 5px; 
+    margin-top: 3px;
+    margin-left: 3px;
+}
+/* 必填内容 */
+#content{
+    width: 950px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0;
+    
+}
+.line {
+    padding: 0 1px 0;
+    margin: 10px 0;
+    line-height: 1px;
+    border-left: 20px solid aqua;
+    border-right: 500px solid aqua;
+    text-align: center;
+    color: aqua;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.line1{
+    padding: 0 1px 0;
+    margin: 10px 0;
+    line-height: 1px;
+    border-left: 23px solid aqua;
+    border-right: 500px solid aqua;
+    margin-top:176px; 
+    text-align: center;
+    color: aqua;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+#content-l{
+    width: 80%;
+    height: 100%;
+}
+
+.single{
+   
+    height: 30px;
+    margin: 5px 2px;
+    float: left;
+}
+.single .detailed :focus{
+    border: 1px solid #66AACC;
+    box-shadow: 0 0 5px #66AACC;
+    outline: none; 
+}
+.dropdown-menu li a{
+    color: #66AACC;
+    
+}
+.dropdown-menu li:hover{
+    background: rgb(80, 80, 245);
+}
+#special{
+    float: none;
+}

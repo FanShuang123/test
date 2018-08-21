@@ -1,0 +1,141 @@
+@import url(../base.css);
+.url{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color: #000;
+    box-sizing: border-box;
+    padding: left 5px; 
+    margin-top: 3px;
+}
+
+.frame { 
+	position: relative;
+	left: -7%;
+	top: 4%;
+	width: 70%;
+	height: 290px;
+	margin-left: 80px;
+	border: 2px solid skyblue;}
+.Button  a:hover{
+	color: #AB9494;
+	background-color:#868686;
+}
+.Button {
+	position: relative;
+	left: 90px;
+	top: 40px;
+	
+}
+.frame1 { 
+	position: relative;
+	left: 0%;
+	top: 6%;
+	width: 80%;
+	height: 30%;
+	margin-left: 80px;
+	border: 2px solid skyblue;}
+.line1 {
+    padding: 0 10px 0;
+    margin: 0px 0px;
+    line-height: 1px; 
+	border:1px solid #E1A5A6 ; 
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 12px;
+	position: relative;
+	left: 0;
+	top: 45px;
+}
+.search {
+	position: relative;
+	left: 10px;
+	top: 10px;
+}
+.search form{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.search .txt{
+	width: 80%;
+	float: left;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	border: 1px solid #959595;
+	border-radius: 8px;
+	padding: 0 20px;
+	font-size: 10px;
+}
+.Largeframe{
+	position: relative;
+	left: 10px;
+	top: 10px;
+    width: 50%;
+    margin-top: 5px;
+}
+.Largeframe .sub{
+	width: 20%;
+	height: 100%;
+	background: #1e90ff;
+	color: #fff;
+	border-radius: 8px;
+    font-size: 14px;
+    position: relative;
+    left: 500px;
+    top: 0;
+}
+.words{
+	position: relative;
+	left: 85px;
+	top: 11px;
+	color: #B55355;
+	font-family:黑体;
+	
+}
+.wildcard span{
+	font-size:15px;
+	float:left;
+	padding-right:5px;
+	font-weight:bold;
+	font-family:黑体;
+	color:#B16566;
+	position: relative;
+	left: 30px;
+	top: 15px;
+}
+.wildcard p{
+	font-size:12px;
+	float:left;
+	padding-right:5px;
+	font-weight:bold;
+    font-family:黑体;
+    color:#B16566;
+	position: relative;
+	left: 60px;
+	top: 15px;
+}
+.Blueframe{
+    position: relative;
+	left: 10px;
+	top:48px;
+    width:100%;
+    height:300px;
+    padding:5px 1px;
+	text-align: center;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+textarea{
+    width: 600px;
+      height: 80px;
+}
+.box tr td{
+    height: 60px;
+    font-size: 14px;
+}

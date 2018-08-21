@@ -1,0 +1,210 @@
+/*主体内容*/
+			.con{
+				width: 700px;
+				height: 650px;
+				margin: 15px auto 0px;
+				font-size: 14px;
+			}
+			/*浮动*/
+			.fl{
+				float: left;
+			}
+			.fr{
+				float: right;
+			}
+			/*清除浮动*/
+			.clearfix:after{
+				height: 0;
+				display: block;
+				content: "";
+				visibility: hidden;
+				clear: both;
+			}
+			/*电话*/
+			.tel{
+				width: 500px;
+				height: 50px;
+				margin-top: 3px;
+				vertical-align: middle;
+			}
+			/*电话输入文字*/
+			.font_tel{
+				display: inline-block;
+				height: 36px;
+				font: 14px/36px 宋体;
+			}
+			/*电话输入框*/
+			.tel .input_tel input{
+				margin: 0;
+				padding: 0;
+				border: 1px #aaa solid;
+				border-right: 0;
+				font-size: 20px;
+				width: 220px;
+				height: 30px;
+			}
+			.input_tel_bg{
+				width: 20px;
+				height: 30px;
+				border: 1px #aaa solid;
+				border-left:0;
+				background: url(../../imgs/associator/seach_key.PNG) no-repeat right;
+			}
+			/*搜索*/
+			.seach input{
+				border: 0;
+				width: 50px;
+				height: 26px;
+				border-radius: 10px;
+				background: #00b5f6;
+				margin-top: 3px;
+				margin-left: 10Px;
+			}
+			.seach input:hover{
+				background: #46eeff;
+			}
+			/*会员基本资料*/
+			.material{
+				height: 71px;
+			}
+			.user_material{
+				 padding: 0 1px 0;
+			     margin: 10px 0 0 0;
+			     line-height: 1px;
+			     border-left: 30px solid #1acdff;
+			     border-right: 570px solid #1acdff;
+			     text-align: center;
+			     color: #1acdff;
+			     box-sizing: border-box;
+			}
+			.material_cont{
+				height: 80px;
+			}
+			.material .material_cont ul li{
+				list-style: none;
+				float: left;
+				width: 23%;
+				height: 49%;
+				line-height: 25px;
+				font-size: 14px;
+			}
+			/*会员储值卡续次*/
+			.user_money{
+				height: 290px;
+			}
+			.user_money_1{
+				height: 27px;
+			}
+			.user_money .com input{
+				border: 0;
+				width: 120px;
+				height: 28px;
+			}
+			.user_recharge input{
+				background: #00B5F6;
+			}
+			.user_comit input{
+				background: #1acdff;
+			}
+			/*续费/续次内容对应框*/
+			.user_cont{
+				margin: 0;
+				padding: 10px 0 0 20px;
+				height: 245px;
+				border: 1px solid #1acdff;
+				display: none;
+			}
+			.choose{
+				width: 220px;
+				height: 24px;
+				border: 1px solid #aaa;
+				margin-bottom: 8px;
+			}
+			.choose_cont_1{
+				margin-bottom: 8px;
+				margin-right: 200px;
+			}
+			.choose_cont{
+				display: none;
+			}
+			.choose_cont_2{
+				margin-bottom: -2px;
+				margin-right: 60px;
+			}
+			.choose_cont_but{
+				width: 360px;
+				height: 30px;
+				margin-left: 38px;
+			}
+			.choose_cont_but2 input{
+				width: 83px;
+				height: 28px;
+				border-radius: 10px;
+				border: 0;
+				background: #00B5F6;
+				color: #fff;
+			}
+			.choose_cont_but1{
+				 height: 28px;
+				 line-height: 28px;
+			}
+			/*增加次数*/
+			.add_user_count{
+				height: 30px;
+				background: url(../../imgs/associator/add.PNG) no-repeat;
+				padding-left: 23px;
+			}
+			.user_per{
+				width: 658px;
+				border-top: 1px solid #1ACDFF;
+			}
+			.tr_td{border-right: 1px solid #aeaeae;}
+			/*充值记录*/
+			.user_notes{
+				height: 27px;
+			}
+			.user_notes_add input{
+				border: 0;
+				width: 120px;
+				height: 28px;
+				background: #00B5F6;
+			}
+			.user_notes_sub input{
+				background: #1acdff;
+				border: 0;
+				width: 130px;
+				height: 28px;
+			}
+			.notes_cont{
+				margin: 0;
+				padding: 10px 0 0 20px;
+				height: 180px;
+				border: 1px solid #1acdff;
+				display: none;
+			}
+			#search_result{
+				width: 370px;
+				height: 330px;
+				border: 3px solid #00beee;
+				z-index: 100;
+				background: #fff;
+				position: absolute;
+				left: 460px;
+				top: 65px;
+				display: none;
+			}
+			.result_bottom{
+				height: 50px;
+				margin-top:258px ;
+			}
+			.xz{
+				width: 70px;
+				height: 25px;
+				line-height: 25px;
+				border: 0;
+				background: #00B5F6;
+				border-radius: 8px;
+			}
+			.xz:hover{
+				background: #46eeff;
+			}
